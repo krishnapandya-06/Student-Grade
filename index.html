@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Records In LocalStorage</title>
+    <link href="assets/CSS/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="ui-container">
+        <h1 class="ui-heading">Records In LocalStorage</h1>
+
+        <div class="ui-input-group">
+            <input type="text" id="input-name" class="ui-input" placeholder="Enter name" />
+            <input type="text" id="input-details" class="ui-input" placeholder="Enter details" />
+            <button id="add-button" class="ui-button-add" onclick="addRecord()">
+                Add Record
+            </button>
+            <button id="update-button" class="ui-button-update" onclick="updateRecord()" style="display: none">
+                Update Record
+            </button>
+        </div>
+
+        <!-- <div class="ui-search">
+            <input type="text" id="input-search" class="ui-input-search" placeholder="Search by name"
+                onkeyup="searchRecords()" />
+        </div> -->
+
+        <h2 class="ui-subheading">Stored Records:</h2>
+        <div class="ui-table-container">
+            <table class="ui-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Details</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="record-list"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
